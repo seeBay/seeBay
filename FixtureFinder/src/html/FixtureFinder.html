@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Acca Challenge</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../css/filters.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			$( ".datepicker" ).datepicker();
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<h1>Fixture Finder</h1>
+	</div>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Filter</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="navbar-form navbar-left form-group" role="filter">
+					<input type="text" class="form-control" placeholder="Team">
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Country <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">England</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Germany</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Italy</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spain</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sweden</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Competition <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">England - Premiership</a></li>
+							<!-- poputate with java script -->
+						</ul>
+					</li>
+				</ul>
+				<div class="navbar-form navbar-left form-group" role="filter">
+					<label for="dateRangeStart">Date Range</label>
+					<input type="text" class="datepicker start form-control" id="dateRangeStart" placeholder="Start">
+					<input type="text" class="datepicker end form-control" placeholder="End">
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</section>
+<section class="fixtures">
+	<h3>Fixtures</h3>
+	<ul class="dates"></ul>
+	<ul class="elements"></ul>
+</section>
+<script src="../js/getFixtures.js"></script>
+</div>
+</body>
+</html>
