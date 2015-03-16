@@ -5,15 +5,10 @@
 	<title>Fixture Finder</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<link rel="stylesheet" href="../css/filters.css">
+	<link rel="stylesheet" href="../css/fixtures.css">
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script>
-		$(function() {
-			$( ".datepicker" ).datepicker();
-		});
-	</script>
 </head>
 <body>
 	<div class="header">
@@ -73,10 +68,11 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 </section>
-<section class="fixtures">
-	<h3>Fixtures</h3>
-	<ul class="dates"></ul>
-	<ul class="elements"></ul>
+<section class="fixtures row">
+	<div class="col-md-7 col-md-offset-2">
+	
+		<ul class="elements"></ul>
+	</div>
 </section>
 <script src="../js/getFixtures.js"></script>
 <script src="../js/init.js"></script>

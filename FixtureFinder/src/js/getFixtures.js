@@ -21,16 +21,16 @@ var FixtureRetriever = {
 var FixtureParser = {  
     parseFixtures: function(fixtures){
         $.each(fixtures, function(index, fixture ) {
-            $('.fixtures > .elements').append(FixtureParser.getFixtureAsHTMLElement(fixture));
+            $('.fixtures .elements').append(FixtureParser.getFixtureAsHTMLElement(fixture, index));
         });
     },
-    getFixtureAsHTMLElement: function(fixture){
+    getFixtureAsHTMLElement: function(fixture, index){
         var listElement = '<li class="fixture">';
-        listElement = listElement + '<span class="kickOffDate">' + fixture.kickOff.date + '</span>';
-        listElement = listElement + '<span class="kickOffTime">' + fixture.kickOff.time + '</span>';
-        listElement = listElement + '<span class="home team">' + fixture.homeTeam +'</span>';
-        listElement = listElement + '<span class="vs">'+fixture.score+'</span>';
-        listElement = listElement + '<span class="away team">' + fixture.awayTeam +'</span>';
+        listElement = listElement + '<span class="kickOffDate"><small>' + fixture.kickOff.date + '</small></span>';
+        listElement = listElement + '<span class="kickOffTime"><small>' + fixture.kickOff.time + '</small></span>';
+        listElement = listElement + '<span class="home team"><strong>' + fixture.homeTeam +'</strong></span>';
+        listElement = listElement + '<span class="vs">' + fixture.score + '</span>';
+        listElement = listElement + '<span class="away team"><strong>' + fixture.awayTeam + '</strong></span>';
         listElement = listElement + '</li>';
         return listElement;
     },

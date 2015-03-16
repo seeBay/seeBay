@@ -1,0 +1,30 @@
+.fixtures h3{
+	text-align: center
+}
+
+.fixtures ul {
+    list-style-type: none;
+}
+
+.fixtures .fixture span {
+    margin-right: 5px;
+}
+
+.fixtures li { 
+	padding: 5px;
+	border-style: solid;
+    border-width: 1px;
+	background: #C0C0C0; 
+}
+
+.fixtures li:nth-child(odd) { 
+	background: white; 
+}
+
+.fixtures .kickOffDate { 
+	padding-left: 25px;
+}
+
+.fixtures .home { 
+	padding-left: 50px;
+}

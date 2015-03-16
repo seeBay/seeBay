@@ -1,3 +1,8 @@
 $(document).ready( 
-	FixtureParser.initialize()
+	init()
 );
+
+function init(){
+	$( ".datepicker" ).datepicker();
+	FixtureParser.initialize();
+}
