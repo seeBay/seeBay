@@ -1,6 +1,6 @@
 var FixtureRetriever = {
     getFixturesByDate: function(date){ 
-        var url = 'http://localhost:8080/fixtures/byDate?callback=?';
+        var url = 'http://localhost:8080/fixtures?callback=?';
         $.ajax({
            type: 'GET',
            data: { "date": date },
